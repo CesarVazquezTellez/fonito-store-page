@@ -4,6 +4,7 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/fonito-store-page/',
   css: {
     postcss: './postcss.config.js',
   },

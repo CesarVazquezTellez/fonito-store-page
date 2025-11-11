@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // 🚨 1. BASE URL de tu backend de NestJS 🚨
-const API_BASE_URL = 'http://localhost:3000'; 
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Crear una instancia de Axios con la configuración base
 const axiosClient = axios.create({
